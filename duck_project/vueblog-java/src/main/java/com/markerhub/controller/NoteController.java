@@ -19,7 +19,7 @@ public class NoteController {
     @GetMapping("/api/notes")
     public Result list(@RequestParam(defaultValue = "1") Integer currentPage, Integer userId) {
 
-        Page page = new Page(currentPage, 5);
+        Page page = new Page(currentPage, 4);
         IPage pageData = noteService.page(page, new QueryWrapper<Note>().eq("user_id",userId).orderByDesc("created"));
         return Result.succ(pageData);
     }

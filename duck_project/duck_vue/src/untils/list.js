@@ -6,21 +6,21 @@
  * @Description: home清单数据
  */
 
-export const setBlogTotal = (blogTotal) => {
-  return localStorage.setItem("BLOGTOTAL", blogTotal)
+export const setBlogTotal = (blogTotal) =>{
+  return localStorage.setItem("BLOGTOTAL",blogTotal)
 }
 
-export const getBlogTotal = () => {
-  let blog = localStorage.getItem("BLOGTOTAL")
+export const getBlogTotal = () =>{
+  let blog=localStorage.getItem("BLOGTOTAL")
   console.log(blog)
   return JSON.parse(blog)
 }
 
-export const setTagTotal = (tagTotal) => {
-  return localStorage.setItem("TAGTOTAL", tagTotal)
+export const setTagTotal = (tagTotal) =>{
+  return localStorage.setItem("TAGTOTAL",tagTotal)
 }
 
-export const getTagTotal = () => {
-  let blog = localStorage.getItem("TAGTOTAL")
+export const getTagTotal = () =>{
+  let blog=localStorage.getItem("TAGTOTAL")
   return JSON.parse(blog)
 }

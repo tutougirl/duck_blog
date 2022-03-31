@@ -121,6 +121,8 @@
   left: 120px;
   top:280px;
   width: 1200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
 }
 .main{
   padding: 50px;

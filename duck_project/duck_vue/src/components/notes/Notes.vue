@@ -2,7 +2,7 @@
  * @Author: he yan ying
  * @Date: 2022-03-09 16:33:33
  * @LastEditors: he yan ying
- * @LastEditTime: 2022-03-29 19:32:32
+ * @LastEditTime: 2022-03-31 18:01:41
  * @Description: 
 -->
 <template>
@@ -68,7 +68,7 @@ export default {
 
 <style>
 .mpage{
-  bottom: 50px;
+  bottom: -20px;
   position:absolute;
   left: 50%;
 }
@@ -81,13 +81,13 @@ export default {
   position: absolute;
 }
 .note-card{
-  min-height: 100px;
+  min-height: 80px;
   position: relative;
 }
 .note-item{
-  min-height:150px ;
+  min-height:130px ;
   padding: 10px;
-  margin-bottom:30px ;
+  margin-bottom:20px ;
   background-color: rgba(255, 255, 255, 0.5);
 }
 </style>

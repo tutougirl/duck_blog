@@ -2,8 +2,8 @@
  * @Author: he yan ying
  * @Date: 2021-05-16 13:55:55
  * @LastEditors: he yan ying
- * @LastEditTime: 2022-03-31 11:51:24
- * @Description:
+ * @LastEditTime: 2022-03-31 17:42:57
+ * @Description: 
  */
 'use strict'
 // Template version: 1.3.1
@@ -17,15 +17,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    // proxyTable: {
-    //   '/api':{
-    //    target: 'http://123.57.90.187:8081/',
-    //    changeOrigin: true,  // 是否跨域
-    //    pathRewrite: {
-    //      '^/api': '/api'   // 重写接口
-    //    }
-    //   }
-    // },
+    proxyTable: {
+      '/api':{
+       target: 'http://123.57.90.187:8081/',
+       changeOrigin: true,  // 是否跨域
+       pathRewrite: {
+         '^/api': '/api'   // 重写接口
+       }
+      } 
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -34,8 +34,8 @@ module.exports = {
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
-
-
+  
+    
     /**
      * Source Maps
      */

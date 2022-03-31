@@ -2,7 +2,7 @@
  * @Author: he yan ying
  * @Date: 2021-05-16 13:56:48
  * @LastEditors: he yan ying
- * @LastEditTime: 2022-03-29 20:28:20
+ * @LastEditTime: 2022-03-31 17:52:11
  * @Description: 
 -->
 <template>
@@ -24,7 +24,8 @@
           </el-card>
         </el-timeline-item>
       </el-timeline>
-      <!--    分页-->
+    </div>
+       <!--    分页-->
     <el-pagination class="mpage"
                    @current-change="page"
                    background
@@ -37,7 +38,6 @@
     >
       });
     </el-pagination>
-    </div>
     <!-- <h1 style="margin-left:400px" v-show="empty">暂无博客</h1> -->
     <el-empty description="暂无博客" v-show="empty"></el-empty>
   </div>
@@ -126,9 +126,9 @@ import TagList from '@/components/list/TagList'
     padding: 50px;
   }
   .mpage{
-    bottom: 50px;
+    top:1000px;
     position:absolute;
-    left: 50%;
+    left: 60%;
   }
   .block{
     min-height: 700px;

@@ -3,7 +3,7 @@
  * @Date: 2021-05-16 13:56:48
  * @LastEditors: he yan ying
  * @LastEditTime: 2022-03-28 20:13:08
- * @Description:
+ * @Description: 
  */
 import Vue from 'vue'
 import Router from 'vue-router'
@@ -24,7 +24,7 @@ export default new Router({
     // 重定向
     {
       path: "/",
-      redirect: '/login'
+      redirect:'/login'
 
     },
     {
@@ -35,7 +35,7 @@ export default new Router({
     {
       path: "/home",
       name: "Home",
-      meta: {
+      meta:{
         requireAuth: true
       },
       component: Home
@@ -46,44 +46,44 @@ export default new Router({
       component: Regist
     },
     {
-      path: "/add",
-      name: "Edit",
-      meta: {
+      path:"/add",
+      name:"Edit",
+      meta:{
         requireAuth: true
       },
-      component: BlogEdit
+      component:BlogEdit
     },
     {
-      path: "/blogs",
-      name: "Home",
-      meta: {
+      path:"/blogs",
+      name:"Home",
+      meta:{
         requireAuth: true
       },
-      component: Blogs
+      component:Blogs
     },
     {
-      path: "/info",
-      name: "Info",
-      meta: {
+      path:"/info",
+      name:"Info",
+      meta:{
         requireAuth: true
       },
-      component: Info
+      component:Info
     },
     {
-      path: "/blog_detail",
-      name: "BlogDetail",
-      meta: {
+      path:"/blog_detail",
+      name:"BlogDetail",
+      meta:{
         requireAuth: true
       },
-      component: BlogDetail
+      component:BlogDetail
     },
     {
-      path: "/tagManger",
-      name: "tagManger",
-      meta: {
+      path:"/tagManger",
+      name:"tagManger",
+      meta:{
         requireAuth: true
       },
-      component: tagManger
+      component:tagManger
     },
   ]
 })

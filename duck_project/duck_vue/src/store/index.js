@@ -3,7 +3,7 @@
  * @Date: 2021-05-16 13:56:48
  * @LastEditors: he yan ying
  * @LastEditTime: 2022-02-15 15:07:03
- * @Description:
+ * @Description: 
  */
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -14,12 +14,20 @@ Vue.use(Vuex)
 
 
 export default new Vuex.Store({
-  modules: {
+  modules:{
     user,
     tag
   },
-  state: {},
-  mutations: {},
-  actions: {},
-  getters: {}
+  state: {
+
+  },
+  mutations: {
+
+  },
+  actions: {
+
+  },
+  getters:{
+    
+  }
 })

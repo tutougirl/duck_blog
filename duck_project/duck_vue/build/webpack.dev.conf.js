@@ -3,7 +3,7 @@
  * @Date: 2021-05-16 13:55:55
  * @LastEditors: he yan ying
  * @LastEditTime: 2022-03-24 20:41:52
- * @Description:
+ * @Description: 
  */
 'use strict'
 const utils = require('./utils')
@@ -22,7 +22,7 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
-    rules: utils.styleLoaders({sourceMap: config.dev.cssSourceMap, usePostCSS: true})
+    rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
   },
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
@@ -32,7 +32,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
-        {from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html')},
+        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
       ],
     },
     hot: true,
@@ -42,7 +42,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     port: PORT || config.dev.port,
     open: config.dev.autoOpenBrowser,
     overlay: config.dev.errorOverlay
-      ? {warnings: false, errors: true}
+      ? { warnings: false, errors: true }
       : false,
     publicPath: config.dev.assetsPublicPath,
     proxy: config.dev.proxyTable,
@@ -63,7 +63,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true,
-      favicon: path.resolve('favicon.ico')
+      favicon:path.resolve('favicon.ico')
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
@@ -93,8 +93,8 @@ module.exports = new Promise((resolve, reject) => {
           messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`],
         },
         onErrors: config.dev.notifyOnErrors
-          ? utils.createNotifierCallback()
-          : undefined
+        ? utils.createNotifierCallback()
+        : undefined
       }))
 
       resolve(devWebpackConfig)
